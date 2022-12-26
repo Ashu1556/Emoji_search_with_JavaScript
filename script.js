@@ -1,11 +1,14 @@
-const searchInput = document.getElementById('search_input')
+const searchInput = document.getElementById('search_input');
+const searchButton = document.getElementById("search_button");
 const emojiListContainer = document.getElementById('emoji_list')
 
 init()
 
 function init() {
-    renderEmojis()
-    searchInput.addEventListener('keyup', renderEmojis)
+    
+    //searchInput.addEventListener('keyup', renderEmojis)
+    searchButton.addEventListener("click", renderEmojis);
+    //renderEmojis()
 }
 
 function renderEmojis() {
